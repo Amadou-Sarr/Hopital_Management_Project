@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head><title>HTTP Status 400 – Bad Request</title>
+    <style type="text/css">h1 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 22px;
+    }
+
+    h2 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 14px;
+    }
+
+    body {
+        font-family: Tahoma, Arial, sans-serif;
+        color: black;
+        background-color: white;
+    }
+
+    b {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+    }
+
+    p {
+        font-family: Tahoma, Arial, sans-serif;
+        background: white;
+        color: black;
+        font-size: 12px;
+    }
+
+    a {
+        color: black;
+    }
+
+    a.name {
+        color: black;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #525D76;
+        border: none;
+    }</style>
+</head>
+<body><h1>HTTP Status 400 – Bad Request</h1>
+<hr class="line"/>
+<p><b>Type</b> Exception Report</p>
+<p><b>Message</b> The HTTP header line [application&#47;json: application&#47;json] does not conform to RFC 7230 and has
+    been ignored.</p>
+<p><b>Description</b> The server cannot or will not process the request due to something that is perceived to be a
+    client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).</p>
+<p><b>Exception</b></p>
+<pre>java.lang.IllegalArgumentException: The HTTP header line [application&#47;json: application&#47;json] does not conform to RFC 7230 and has been ignored.
+	org.apache.coyote.http11.Http11InputBuffer.skipLine(Http11InputBuffer.java:953)
+	org.apache.coyote.http11.Http11InputBuffer.parseHeader(Http11InputBuffer.java:816)
+	org.apache.coyote.http11.Http11InputBuffer.parseHeaders(Http11InputBuffer.java:563)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:311)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.lang.Thread.run(Thread.java:748)
+</pre>
+<p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p>
+<hr class="line"/>
+<h3>Apache Tomcat/9.0.16</h3></body>
+</html>

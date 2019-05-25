@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Api" />
+        <module name="Domain" />
+        <module name="Persistance" />
+        <module name="Web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Api" target="8" />
+      <module name="Domain" target="8" />
+      <module name="New_Hopital_Back_End" target="8" />
+      <module name="Persistance" target="8" />
+      <module name="Web" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
