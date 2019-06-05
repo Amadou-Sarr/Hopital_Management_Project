@@ -19,8 +19,7 @@ public class SaveHeavyAntecedantsPayloadRequest implements Runnable {
     @Autowired
     MedicamentRepository medicamentRepository;
 
-    @Autowired
-    Logger logger;
+    Logger logger = LoggerFactory.getLogger(getClass());
 
 
     @Override

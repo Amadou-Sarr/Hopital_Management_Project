@@ -2,69 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aec6ec1-8a08-4c0e-b04a-f92b21ce112b" name="Default" comment="Update on Rendez vous business logic added  Medecin relationship">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Config/WebMvcConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/ControlFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/AuthentificationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/ConsultationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/RoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/UtilisateurController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/LoginModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/AutoWiringSpringBeanJobFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/QuartzJobScheduler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Config/WebMvcConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/ControlFunctions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Controllers/AuthentificationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Controllers/ConsultationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Controllers/RoleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Controllers/UtilisateurController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ApiResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ChangePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ChangePassword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ConsultationPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ConsultationPayload.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/CreateUtilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/CreateUtilisateur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/JwtAuthenticationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/JwtAuthenticationResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/LoginModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/LoginRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ProfilUtilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ProfilUtilisateur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/RendezvousPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/RendezvousPayload.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/SignupRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/SignupRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UserIdentityAvailability.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UserIdentityAvailability.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UtilisateurSummary.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UtilisateurSummary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/CustomUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationEntryPoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtTokenProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/UtilisateurPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/UtilisateurPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/AuthentificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/AuthentificationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/ConsultationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/ConsultationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/RendezVousController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/RendezVousController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/UtilisateurController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/UtilisateurController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/configuration/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/configuration/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/configuration/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/configuration/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/AppException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/AppException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/BadRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/BadRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/RessourceNotFound.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/RessourceNotFound.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/AutoWiringSpringBeanJobFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/QuartzJobScheduler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsulattonByServiceJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsulattonByServiceJob.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByAgeJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByAgeJob.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByDayJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByDayJob.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByGenderJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByGenderJob.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/PostRequestsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/PostRequestsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/Persistance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/Persistance.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/RendezVousRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/RendezVousRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/UtilisateurRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/UtilisateurRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/target/classes/udb/gl/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/target/classes/udb/gl/Bootstrap.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Domain/target/" />
@@ -336,6 +275,26 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gl" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gl" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gl" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -546,7 +505,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108892000" />
+    <option name="totallyTimeSpent" value="109131000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,7 +532,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
