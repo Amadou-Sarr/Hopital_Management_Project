@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aec6ec1-8a08-4c0e-b04a-f92b21ce112b" name="Default" comment="Update on Rendez vous business logic added  Medecin relationship">
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsulattonByServiceJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsulattonByServiceJob.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/PostRequestsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/PostRequestsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Domain/target/" />
@@ -64,14 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatistiquesConsultationsService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsultationsService.java">
+      <file leaf-file-name="PostRequestsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -79,20 +75,26 @@
       <file leaf-file-name="SaveHeavyAntecedantsPayloadRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="148">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostRequestsService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java">
+      <file leaf-file-name="StatistiquesConsultationsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsultationsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-              <folding>
-                <element signature="e#451#479#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="781">
+              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaveHeavyMedicamentsPayloadRequest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -275,26 +277,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gl" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
-              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gl" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
-              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gl" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -320,11 +302,11 @@
       <recent name="udb.gl.Payload" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ly\Documents\Tutorials\RomanianCoderExamples-master\NoteIt\New_Hopital_Back_End\Api\src\main\java\udb\gl\services" />
       <recent name="C:\Users\ly\Documents\Tutorials\RomanianCoderExamples-master\NoteIt\New_Hopital_Back_End\Api\src\main\java\udb\gl\api" />
       <recent name="C:\Users\ly\Documents\Tutorials\RomanianCoderExamples-master\NoteIt\New_Hopital_Back_End\Api\src\main\java\udb\gl\Payload" />
       <recent name="C:\Users\ly\Documents\Tutorials\RomanianCoderExamples-master\NoteIt\New_Hopital_Back_End\Api\src\main\java\udb\gl\Config" />
       <recent name="C:\Users\ly\Documents\Tutorials\RomanianCoderExamples-master\NoteIt\New_Hopital_Back_End\Api\src\main\java\udb\gl\exception" />
-      <recent name="C:\Users\ly\Documents\Tutorials\RomanianCoderExamples-master\NoteIt\New_Hopital_Back_End\Api\src\main\java\udb\gl\TokenSecurity" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -505,7 +487,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109131000" />
+    <option name="totallyTimeSpent" value="109625000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,10 +520,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35478547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.51650167" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32980332" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="8" weight="0.2920792" />
@@ -799,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -859,13 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -976,16 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsultationsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/StatistiquesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1042,13 +1000,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsultationsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="204">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="e#451#479#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
