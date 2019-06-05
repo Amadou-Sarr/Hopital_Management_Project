@@ -37,14 +37,14 @@ public class Bootstrap implements CommandLineRunner {
     public void run(String... args) throws Exception {
       //  bootstrapRoles();
        // String passwordUtilisateur =  passwordEncoder.encode("password");
-        // bootstrapUtilisteurs("Sarr","Amadou",passwordUtilisateur,"username","photoStringLink","amadou.sarr@udb.sn","123ABC");
+        // bootstrapUtilisteurs("Sarr","Amadou",passwordUtilisateur,"username","photoStringLink","amadou.sarr@udb.sn","123ABC","Chirurgie");
 
     }
 
 
-    void bootstrapUtilisteurs(String nom, String prenom, String password, String username, String photo, String email, String matricule){
+    void bootstrapUtilisteurs(String nom, String prenom, String password, String username, String photo, String email, String matricule,String service){
 
-        Utilisateur utilisateur = new Utilisateur(nom,prenom,password,username,photo,email,matricule);
+        Utilisateur utilisateur = new Utilisateur(nom,prenom,password,username,photo,email,matricule,service);
         Role utilisateurRole = roleRepository.findByName(RoleName.ROLE_ADMIN).orElseThrow(
                 ()->new AppException("Le Role de l'utilisateur n'est pas définit")
         );

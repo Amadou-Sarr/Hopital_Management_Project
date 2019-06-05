@@ -2,23 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aec6ec1-8a08-4c0e-b04a-f92b21ce112b" name="Default" comment="Update on Rendez vous business logic added  Medecin relationship">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/CreateUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/CreateUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/SignupRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/SignupRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/TokenSecurity/UtilisateurPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/TokenSecurity/UtilisateurPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/AuthentificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/AuthentificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/RendezVousController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/RendezVousController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/UtilisateurController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Domain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/RendezVous.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/RendezVous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/RendezVous.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/RendezVous.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Utilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Utilisateur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RendezVousRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RendezVousRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/UtilisateurRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/UtilisateurRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Config/WebMvcConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/ControlFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/AuthentificationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/ConsultationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/RoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/UtilisateurController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/LoginModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/AutoWiringSpringBeanJobFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/QuartzJobScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Config/WebMvcConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/ControlFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Controllers/AuthentificationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Controllers/ConsultationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Controllers/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Controllers/UtilisateurController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ApiResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ChangePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ChangePassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ConsultationPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ConsultationPayload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/CreateUtilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/CreateUtilisateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/JwtAuthenticationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/JwtAuthenticationResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/LoginModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/LoginRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ProfilUtilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ProfilUtilisateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/RendezvousPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/RendezvousPayload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/SignupRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/SignupRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UserIdentityAvailability.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UserIdentityAvailability.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UtilisateurSummary.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UtilisateurSummary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationEntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtTokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtTokenProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/UtilisateurPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/UtilisateurPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/AuthentificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/AuthentificationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/ConsultationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/ConsultationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/RendezVousController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/RendezVousController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/UtilisateurController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/UtilisateurController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/configuration/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/configuration/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/configuration/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/configuration/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/AppException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/AppException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/BadRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/BadRequestException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/RessourceNotFound.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/exception/RessourceNotFound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/AutoWiringSpringBeanJobFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/QuartzJobScheduler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsulattonByServiceJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsulattonByServiceJob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByAgeJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByAgeJob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByDayJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByDayJob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByGenderJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsultationsByGenderJob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/PostRequestsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/PostRequestsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/Persistance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/Persistance.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/RendezVousRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/RendezVousRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/UtilisateurRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/UtilisateurRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/target/classes/udb/gl/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/target/classes/udb/gl/Bootstrap.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Domain/target/" />
@@ -79,15 +125,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveHeavyMedicamentsPayloadRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-26">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StatistiquesConsultationsService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsultationsService.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,25 +141,7 @@
         <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="610">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatistiquesConsulattonByServiceJob.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatistiquesConsultationsByGenderJob.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsultationsByGenderJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -130,21 +149,11 @@
       <file leaf-file-name="PostRequestsService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="221">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#451#479#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatistiquesConsultationsByDayJob.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsultationsByDayJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -198,7 +207,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/PatientRepository.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/AuthentificationController.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/TokenSecurity/JwtAuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/exception/BadRequestException.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/Config/AuditConfig.java" />
@@ -248,6 +256,7 @@
         <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/StatistiquesConsultationsJournalieres.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/StatistiquesController.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/AuthentificationController.java" />
       </list>
     </option>
   </component>
@@ -291,6 +300,41 @@
             <path>
               <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
               <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -502,7 +546,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108311000" />
+    <option name="totallyTimeSpent" value="108892000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,7 +559,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -530,7 +573,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32838285" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
@@ -542,7 +585,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32980332" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="SonarLint" order="8" visible="true" weight="0.2920792" />
+      <window_info anchor="bottom" id="SonarLint" order="8" weight="0.2920792" />
       <window_info id="Learn" order="2" weight="0.32980332" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -642,30 +685,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/configuration/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/JwtAuthenticationEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Grails Projects/mvp-application-second/app-admin/grails-app/jobs/app/admin/DeltaImportJob.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Grails Projects/mvp-application-second/app-microservice/grails-app/services/app/microservice/ImportGitHubJobsService.groovy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://D:/Grails Projects/mvp-application-second/app-microservice/grails-app/controllers/app/microservice/ImportJobsController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -887,7 +906,7 @@
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -895,17 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#451#479#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1040,6 +1048,47 @@
           <caret line="97" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/UtilisateurController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/ConsultationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/AuthentificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#451#479#0" expanded="true" />
           </folding>
         </state>
       </provider>

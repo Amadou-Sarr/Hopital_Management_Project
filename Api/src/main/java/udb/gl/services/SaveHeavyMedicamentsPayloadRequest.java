@@ -1,7 +1,6 @@
 package udb.gl.services;
 
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import udb.gl.MedicamentRepository;
 import udb.gl.Medicaments;
@@ -15,7 +14,8 @@ public class SaveHeavyMedicamentsPayloadRequest implements Runnable {
     @Autowired
     MedicamentRepository medicamentRepository;
 
-    Logger logger = LoggerFactory.getLogger(getClass());
+    @Autowired
+    Logger logger;
 
     @Override
     public void run() {

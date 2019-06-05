@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/AuthentificationController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/CreateUtilisateur.java">
           <value>
             <set />
@@ -88,7 +93,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/RendezVousAvailableHours.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/RendezvousPayload.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/SignupRequest.java">
           <value>
             <set />
           </value>
@@ -119,6 +134,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsutationsService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/UtilisateurPrincipal.java">
           <value>
             <set />
           </value>
@@ -204,6 +224,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/StatistiquesConsultationsRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/UtilisateurRepository.java">
           <value>
             <set />
           </value>
