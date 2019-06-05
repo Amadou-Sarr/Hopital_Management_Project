@@ -34,6 +34,9 @@ public class Utilisateur extends DateAudit {
     @Column(length =100)
     private String email;
 
+    @Column(length =100)
+    private String service;
+
     private boolean enabled;
 
     private boolean changed;
@@ -45,7 +48,7 @@ public class Utilisateur extends DateAudit {
 
     Utilisateur(){}
 
-    public Utilisateur (String nom, String prenom, String password, String username, String photo, String email, String matricule) {
+    public Utilisateur (String nom, String prenom, String password, String username, String photo, String email, String matricule, String service) {
         this.nom = nom;
         this.prenom = prenom;
         this.password = password;
@@ -53,6 +56,7 @@ public class Utilisateur extends DateAudit {
         this.photo = photo;
         this.email = email;
         this.matricule = matricule;
+        this.service = service;
 
         // this.role = role;
 
@@ -116,6 +120,14 @@ public class Utilisateur extends DateAudit {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getService() {
+        return service;
+    }
+
+    public void setService(String service) {
+        this.service = service;
     }
 
     public void setEmail(String email) {

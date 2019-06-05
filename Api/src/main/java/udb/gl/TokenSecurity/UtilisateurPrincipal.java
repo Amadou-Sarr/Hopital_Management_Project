@@ -25,6 +25,8 @@ public class UtilisateurPrincipal implements UserDetails {
 
     private String photo;
 
+    private String service;
+
     private boolean changed;
 
     @JsonIgnore
@@ -35,7 +37,7 @@ public class UtilisateurPrincipal implements UserDetails {
 
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UtilisateurPrincipal(Long id, String nom, String prenom, String username, String photo, String email, String password, String matricule, boolean changed, Collection<? extends GrantedAuthority> authorities) {
+    public UtilisateurPrincipal(Long id, String nom, String prenom, String username, String photo, String email, String password, String matricule,String service, boolean changed, Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -44,6 +46,7 @@ public class UtilisateurPrincipal implements UserDetails {
         this.email = email;
         this.password = password;
         this.matricule = matricule;
+        this.service = service;
         this.changed = changed;
         this.authorities = authorities;
     }
@@ -64,6 +67,7 @@ public class UtilisateurPrincipal implements UserDetails {
                 utilisateur.getEmail(),
                 utilisateur.getPassword(),
                 utilisateur.getMatricule(),
+                utilisateur.getService(),
                 utilisateur.isChanged(),
                 authorities
         );
@@ -90,6 +94,10 @@ public class UtilisateurPrincipal implements UserDetails {
     }
 
     public  String getMatricule(){ return matricule;}
+
+    public String getService() {
+        return service;
+    }
 
     public boolean isChanged() {
         return changed;

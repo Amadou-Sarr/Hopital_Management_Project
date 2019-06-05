@@ -69,7 +69,7 @@ public class AuthentificationController {
         }
 
         //FINALLY Creating the USER
-        Utilisateur utilisateur = new Utilisateur(signupRequest.getNom(),signupRequest.getPrenom(),signupRequest.getPassword(),signupRequest.getUsername(),signupRequest.getPhoto(),signupRequest.getEmail(),signupRequest.getMatricule());
+        Utilisateur utilisateur = new Utilisateur(signupRequest.getNom(),signupRequest.getPrenom(),signupRequest.getPassword(),signupRequest.getUsername(),signupRequest.getPhoto(),signupRequest.getEmail(),signupRequest.getMatricule(),signupRequest.getService());
         utilisateur.setPassword(passwordEncoder.encode(utilisateur.getPassword()));
         Role roleUtilisateur = roleRepository.findByName(RoleName.ROLE_USER)
                 .orElseThrow(

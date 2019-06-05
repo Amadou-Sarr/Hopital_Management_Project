@@ -5,11 +5,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import udb.gl.Patient;
-import udb.gl.PatientRepository;
+import udb.gl.*;
 import udb.gl.payload.ApiResponse;
-import udb.gl.RendezVous;
-import udb.gl.RendezVousRepository;
+import udb.gl.payload.RendezVousAvailableHours;
 import udb.gl.payload.RendezvousPayload;
 
 import javax.validation.Valid;
@@ -29,14 +27,17 @@ public class RendezVousController {
     @Autowired
     RendezVousRepository rendezVousRepository;
 
+    @Autowired
+    UtilisateurRepository utilisateurRepository;
+
     @GetMapping("/all")
     public List<RendezVous> getAllRendezVous(){
         return  rendezVousRepository.findAll();
     }
 
-    @GetMapping("/patientsByDate/{date}")
-    public List<Patient> getPatientByDate(@RequestParam Date date){
-        List<RendezVous> rendezVousList = rendezVousRepository.findAllByDate(date);
+    @GetMapping("/patientsByDate")
+    public List<Patient> getPatientByDate(@RequestBody RendezVousAvailableHours rendezVousAvailableHours){
+        List<RendezVous> rendezVousList = rendezVousRepository.findAllByDateAndAndUtilisateur(rendezVousAvailableHours.getDate(),rendezVousAvailableHours.getUtilisateur());
         List<Patient> patientList = new ArrayList<>();
         for(RendezVous rendezVous : rendezVousList){
             patientList.add(rendezVous.getPatient());
@@ -44,10 +45,15 @@ public class RendezVousController {
         return patientList;
     }
 
-    // TODO check if i need to use PathVariable or RequestParam
+    @GetMapping("/getMedecins")
+    public List<Utilisateur> getAllMedecins(){
+        return utilisateurRepository.findAllByRole(RoleName.ROLE_MEDECIN);
+    }
+
+
     @GetMapping("/avalaibleHours")
-    public List<String> getAvalaibleHoursByDate(@RequestParam Date date){
-        List<RendezVous> rendezVousList = rendezVousRepository.findAllByDate(date);
+    public List<String> getAvalaibleHoursByDate(@RequestBody RendezVousAvailableHours rendezVousAvailableHours){
+        List<RendezVous> rendezVousList = rendezVousRepository.findAllByDateAndAndUtilisateur(rendezVousAvailableHours.getDate(),rendezVousAvailableHours.getUtilisateur());
         List<String> avalaibleHoursList = new ArrayList<>();
         for(RendezVous rendezVous : rendezVousList){
             avalaibleHoursList.add(rendezVous.getHeure());

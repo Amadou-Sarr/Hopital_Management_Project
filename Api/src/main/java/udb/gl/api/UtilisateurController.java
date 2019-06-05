@@ -60,7 +60,7 @@ public class UtilisateurController {
     public ResponseEntity<ApiResponse> createUtilisateur(@Valid @RequestBody CreateUtilisateur createUtilisateur){
         // Todo Refactor
         Utilisateur utilisateur = new Utilisateur(createUtilisateur.getNom(),createUtilisateur.getPrenom(),createUtilisateur.getPassword(),
-                createUtilisateur.getUsername(),createUtilisateur.getEmail(),createUtilisateur.getPhoto(),createUtilisateur.getMatricule());
+                createUtilisateur.getUsername(),createUtilisateur.getEmail(),createUtilisateur.getPhoto(),createUtilisateur.getMatricule(),createUtilisateur.getService());
         utilisateur.setPassword(passwordEncoder.encode(utilisateur.getPassword()));
 
         for(Role role : createUtilisateur.getRole()){

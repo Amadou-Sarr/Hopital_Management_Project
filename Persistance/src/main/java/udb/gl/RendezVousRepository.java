@@ -15,5 +15,7 @@ public interface RendezVousRepository  extends JpaRepository<RendezVous, Long> {
 
     List<RendezVous> findAllByDate(Date date);
 
+    List<RendezVous> findAllByDateAndAndUtilisateur(Date date, Utilisateur utilisateur);
+
     int countAllByDate(Date date);
 }

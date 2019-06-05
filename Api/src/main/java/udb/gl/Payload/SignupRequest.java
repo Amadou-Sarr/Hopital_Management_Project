@@ -35,6 +35,11 @@ public class SignupRequest {
     @Email
     private String email;
 
+    @NotBlank
+    @Size(max = 40)
+    private String service;
+
+
     public String getMatricule() {
         return matricule;
     }
@@ -89,5 +94,13 @@ public class SignupRequest {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getService() {
+        return service;
+    }
+
+    public void setService(String service) {
+        this.service = service;
     }
 }

@@ -1,5 +1,7 @@
 package udb.gl;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -21,13 +23,21 @@ public class RendezVous {
     //@JoinTable(name="utilisateur_role",joinColumns = @JoinColumn(name = "utilisateur_id"),inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Patient patient;
 
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "utilisateur_id", nullable = false)
+    // @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private Utilisateur  utilisateur;
+
+
     public RendezVous() {}
 
-    public RendezVous(Date date, String heure, boolean estConsulter, Patient patient) {
+    public RendezVous(Date date, String heure, boolean estConsulter, Patient patient, Utilisateur utilisateur) {
         this.date = date;
         this.heure = heure;
         this.estConsulter = estConsulter;
         this.patient = patient;
+        this.utilisateur = utilisateur;
     }
 
     public long getId() {
@@ -68,5 +78,13 @@ public class RendezVous {
 
     public void setEstConsulter(boolean estConsulter) {
         this.estConsulter = estConsulter;
+    }
+
+    public Utilisateur getUtilisateur() {
+        return utilisateur;
+    }
+
+    public void setUtilisateur(Utilisateur utilisateur) {
+        this.utilisateur = utilisateur;
     }
 }

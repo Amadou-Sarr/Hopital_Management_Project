@@ -31,6 +31,7 @@ public class CreateUtilisateur {
     @Size(max = 60)
     private String photo;
 
+    private String service;
 
     private String matricule;
 
@@ -96,6 +97,14 @@ public class CreateUtilisateur {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getService() {
+        return service;
+    }
+
+    public void setService(String service) {
+        this.service = service;
     }
 
     public Set<Role> getRole() {
