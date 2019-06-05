@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0aec6ec1-8a08-4c0e-b04a-f92b21ce112b" name="Default" comment="Update on Rendez vous business logic added  Medecin relationship">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0aec6ec1-8a08-4c0e-b04a-f92b21ce112b" name="Default" comment="Update on Rendez vous business logic added  Medecin relationship" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Domain/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -487,7 +485,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109625000" />
+    <option name="totallyTimeSpent" value="109741000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,10 +518,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.51650167" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.51650167" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25189108" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32980332" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="8" weight="0.2920792" />

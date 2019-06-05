@@ -1,4 +1,5 @@
 
-nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(•Ú…´ûÿÿÿÿ8þ©­­£-
-Xsquid:UselessImportCheck".Remove this unused import 'java.util.HashSet'.(Ê‚êX8ÌÄÜ­£-
-Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ8ÌÄÜ­£-
+nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(•Ú…´ûÿÿÿÿ8¢ÞóÉ²-
+`squid:S00107-"<Method has 8 parameters, which is greater than 7 authorized.(Ùˆ›‰þÿÿÿÿ8¢ÞóÉ²-
+Xsquid:UselessImportCheck".Remove this unused import 'java.util.HashSet'.(Ê‚êX8¢ÞóÉ²-
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ8¢ÞóÉ²-

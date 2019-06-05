@@ -1,6 +1,6 @@
 
+Isquid:S1452"&Remove usage of generic wildcard type.(¾š½£üÿÿÿÿ8ƒßî¦£-
 asquid:S1854">Remove this useless assignment to local variable "staticList".(ôÈ‘çûÿÿÿÿ8…ãä¦£-
 jsquid:S1226"GIntroduce a new variable instead of reusing the parameter "staticList".(ôÈ‘çûÿÿÿÿ8…ãä¦£-
-ssquid:UselessImportCheck"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Þ8óÐÝñ¦-
-Isquid:S1452"&Remove usage of generic wildcard type.(¾š½£üÿÿÿÿ8ƒßî¦£-
 isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ù’žÑ8’Í›§£-
+ssquid:UselessImportCheck"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Þ8óÐÝñ¦-
