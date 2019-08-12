@@ -35,14 +35,14 @@ public class Bootstrap implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-      //  bootstrapRoles();
+     //   bootstrapRoles();
        // String passwordUtilisateur =  passwordEncoder.encode("password");
-        // bootstrapUtilisteurs("Sarr","Amadou",passwordUtilisateur,"username","photoStringLink","amadou.sarr@udb.sn","123ABC","Chirurgie");
+         //bootstrapUtilisteurs("Sarr","Amadou",passwordUtilisateur,"username","photoStringLink","amadou.sarr@udb.sn","123ABC",ServiceName.SERVICE_CHIRURGIE);
 
     }
 
 
-    void bootstrapUtilisteurs(String nom, String prenom, String password, String username, String photo, String email, String matricule,String service){
+    void bootstrapUtilisteurs(String nom, String prenom, String password, String username, String photo, String email, String matricule,ServiceName service){
 
         Utilisateur utilisateur = new Utilisateur(nom,prenom,password,username,photo,email,matricule,service);
         Role utilisateurRole = roleRepository.findByName(RoleName.ROLE_ADMIN).orElseThrow(

@@ -1,5 +1,7 @@
 package udb.gl.payload;
 
+import udb.gl.ServiceName;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
@@ -37,7 +39,7 @@ public class SignupRequest {
 
     @NotBlank
     @Size(max = 40)
-    private String service;
+    private ServiceName service;
 
 
     public String getMatricule() {
@@ -96,11 +98,11 @@ public class SignupRequest {
         this.email = email;
     }
 
-    public String getService() {
+    public ServiceName getService() {
         return service;
     }
 
-    public void setService(String service) {
+    public void setService(ServiceName service) {
         this.service = service;
     }
 }

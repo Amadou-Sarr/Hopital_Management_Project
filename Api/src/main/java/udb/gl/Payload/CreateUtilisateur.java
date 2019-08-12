@@ -1,6 +1,7 @@
 package udb.gl.payload;
 
 import udb.gl.Role;
+import udb.gl.ServiceName;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -31,7 +32,7 @@ public class CreateUtilisateur {
     @Size(max = 60)
     private String photo;
 
-    private String service;
+    private ServiceName service;
 
     private String matricule;
 
@@ -99,11 +100,11 @@ public class CreateUtilisateur {
         this.email = email;
     }
 
-    public String getService() {
+    public ServiceName getService() {
         return service;
     }
 
-    public void setService(String service) {
+    public void setService(ServiceName service) {
         this.service = service;
     }
 

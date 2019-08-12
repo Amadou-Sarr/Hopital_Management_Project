@@ -35,7 +35,8 @@ public class Utilisateur extends DateAudit {
     private String email;
 
     @Column(length =100)
-    private String service;
+    @Enumerated(EnumType.STRING)
+    private ServiceName service;
 
     private boolean enabled;
 
@@ -48,7 +49,7 @@ public class Utilisateur extends DateAudit {
 
     Utilisateur(){}
 
-    public Utilisateur (String nom, String prenom, String password, String username, String photo, String email, String matricule, String service) {
+    public Utilisateur (String nom, String prenom, String password, String username, String photo, String email, String matricule, ServiceName service) {
         this.nom = nom;
         this.prenom = prenom;
         this.password = password;
@@ -122,11 +123,11 @@ public class Utilisateur extends DateAudit {
         return email;
     }
 
-    public String getService() {
+    public ServiceName getService() {
         return service;
     }
 
-    public void setService(String service) {
+    public void setService(ServiceName service) {
         this.service = service;
     }
 

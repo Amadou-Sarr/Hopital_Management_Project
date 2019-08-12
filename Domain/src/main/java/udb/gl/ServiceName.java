@@ -1,0 +1,9 @@
+package udb.gl;
+
+public enum ServiceName {
+    SERVICE_CHIRURGIE,
+    SERVICE_PEDIATRIE,
+    SERVICE_CARDIOLOGIE,
+    SERVICE_LABORATOIRE,
+    SERVICE_UROLOGIE
+}

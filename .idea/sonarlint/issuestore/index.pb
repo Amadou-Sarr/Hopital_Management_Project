@@ -73,3 +73,11 @@ A
 Domain/pom.xml,7\b\7b5618abb8c700551796d73e955c31021b47e2f0
 t
 DApi/src/main/java/udb/gl/jobs/StatistiquesConsultationsByAgeJob.java,1\3\132314da373ae4817bd1c1e6e430e658f5adcf16
+\
+,Domain/src/main/java/udb/gl/ServiceName.java,0\2\0242aae3de4faa10d85c1a3dd3d7d3f4aa52cb9e
+t
+DApi/src/main/java/udb/gl/tokensecurity/CustomUserDetailsService.java,7\c\7c2ec0f6d4e6f02863a169dfe6d3e1fca0da3e3d
+l
+<Api/src/main/java/udb/gl/tokensecurity/JwtTokenProvider.java,4\b\4b37c8bc634cdef067958ac2b42eacc7b38b2897
+H
+Quartz_Tables_InnoDB.sql,2\d\2dbdc3d5fed3df198cad69c8260f0ed64c06f27b

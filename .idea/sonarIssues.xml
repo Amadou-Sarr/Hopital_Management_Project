@@ -108,6 +108,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/UtilisateurSummary.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java">
           <value>
             <set />
@@ -184,6 +189,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Domain/src/main/java/udb/gl/RoleName.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Domain/src/main/java/udb/gl/ServiceName.java">
           <value>
             <set />
           </value>

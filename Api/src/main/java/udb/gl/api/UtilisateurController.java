@@ -2,6 +2,7 @@ package udb.gl.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/utilisateur")
+@Secured("permit_all")
 public class UtilisateurController {
 
     @Autowired
@@ -36,15 +38,13 @@ public class UtilisateurController {
         Utilisateur user = utilisateurRepository.findByUsername(username)
                 .orElseThrow(() -> new RessourceNotFound("Utilisateur", "username", username));
 
-        ProfilUtilisateur userProfile = new ProfilUtilisateur(user.getId(),user.getPrenom(), user.getNom(), user.getUsername(),user.getMatricule(), user.getCreatedAt());
-        return userProfile;
+       return  new ProfilUtilisateur(user.getId(),user.getPrenom(), user.getNom(), user.getUsername(),user.getMatricule(), user.getCreatedAt());
     }
 
 
     @GetMapping("/me")
     public UtilisateurSummary showprofile(@CurrentUser UtilisateurPrincipal currentUser){
-        UtilisateurSummary utilisateurSummary = new UtilisateurSummary(currentUser.getId(),currentUser.getUsername(),currentUser.getPrenom());
-        return utilisateurSummary;
+         return new UtilisateurSummary(currentUser.getId(),currentUser.getUsername(),currentUser.getPrenom(), currentUser.getAuthorities());
     }
 
 

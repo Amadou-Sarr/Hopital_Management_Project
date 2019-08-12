@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import udb.gl.ServiceName;
 import udb.gl.Utilisateur;
 
 import java.util.Collection;
@@ -25,7 +26,7 @@ public class UtilisateurPrincipal implements UserDetails {
 
     private String photo;
 
-    private String service;
+    private ServiceName service;
 
     private boolean changed;
 
@@ -37,7 +38,7 @@ public class UtilisateurPrincipal implements UserDetails {
 
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UtilisateurPrincipal(Long id, String nom, String prenom, String username, String photo, String email, String password, String matricule,String service, boolean changed, Collection<? extends GrantedAuthority> authorities) {
+    public UtilisateurPrincipal(Long id, String nom, String prenom, String username, String photo, String email, String password, String matricule,ServiceName service, boolean changed, Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -95,7 +96,7 @@ public class UtilisateurPrincipal implements UserDetails {
 
     public  String getMatricule(){ return matricule;}
 
-    public String getService() {
+    public ServiceName getService() {
         return service;
     }
 

@@ -1,4 +1,4 @@
 
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸á»ß8ä•ÓÉ²-
-^squid:S00107"AConstructor has 8 parameters, which is greater than 7 authorized.(Ù¤‰ê8ä•ÓÉ²-
-Gsquid:S1948"&Make "role" transient or serializable.(Ó·ÃÒüÿÿÿÿ8ä•ÓÉ²-
+Isquid:S19480"&Make "role" transient or serializable.(Ó·ÃÒüÿÿÿÿ8Ê÷¡…¸-
+_squid:S001074"AConstructor has 8 parameters, which is greater than 7 authorized.(Æ Ô"8Ê÷¡…¸-
+isquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(¸á»ß8Ê÷¡…¸-
