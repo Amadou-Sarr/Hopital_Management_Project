@@ -1,5 +1,6 @@
 
-[squid:S00107-"<Method has 8 parameters, which is greater than 7 authorized.(ñ¡ÅŞ8Ìçø„¸-
-nsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(•Ú…´ûÿÿÿÿ8ó¸À¸-
-Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8Ìçø„¸-
-Xsquid:UselessImportCheck".Remove this unused import 'java.util.HashSet'.(Ê‚êX8Ìçø„¸-
+Ysquid:S00107"<Method has 8 parameters, which is greater than 7 authorized.(ñ¡ÅŞ8Ìçø„¸-
+Vsquid:UselessImportCheck".Remove this unused import 'java.util.HashSet'.(Ê‚êX8Ìçø„¸-
+Xsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8Ìçø„¸-
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(–¯Ş8»™ÒûË-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(® ”Ó8»™ÒûË-

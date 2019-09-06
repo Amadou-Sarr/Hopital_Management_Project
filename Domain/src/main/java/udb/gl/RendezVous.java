@@ -18,15 +18,14 @@ public class RendezVous {
 
     private boolean estConsulter;
 
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST )//CascadeType.Persit & Merge
-    @JoinColumn(unique = true)
+    @OneToOne(fetch = FetchType.LAZY)//CascadeType.Persit & Merge
+    @JoinColumn(unique = false,  nullable = false)
     //@JoinTable(name="utilisateur_role",joinColumns = @JoinColumn(name = "utilisateur_id"),inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Patient patient;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "utilisateur_id", nullable = false)
     // @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonIgnore
     private Utilisateur  utilisateur;
 
 

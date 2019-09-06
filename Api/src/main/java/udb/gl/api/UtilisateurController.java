@@ -2,26 +2,26 @@ package udb.gl.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import udb.gl.*;
+import udb.gl.exception.AppException;
 import udb.gl.exception.RessourceNotFound;
 import udb.gl.payload.*;
+import udb.gl.services.Utils;
 import udb.gl.tokensecurity.CurrentUser;
 import udb.gl.tokensecurity.UtilisateurPrincipal;
 
 import javax.validation.Valid;
 import java.net.URI;
-import java.util.Collections;
-import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 
 @RestController
 @RequestMapping("/api/utilisateur")
-@Secured("permit_all")
 public class UtilisateurController {
 
     @Autowired
@@ -33,6 +33,15 @@ public class UtilisateurController {
     @Autowired
     PasswordEncoder passwordEncoder;
 
+    @Autowired
+    Utils utils;
+
+
+    @GetMapping("/role/all")
+    public List<Role> getAllRole(){
+        return roleRepository.findAll();
+    }
+
     @GetMapping("{username}")
     public ProfilUtilisateur getUserProfile(@PathVariable(value = "username") String username) {
         Utilisateur user = utilisateurRepository.findByUsername(username)
@@ -43,8 +52,11 @@ public class UtilisateurController {
 
 
     @GetMapping("/me")
-    public UtilisateurSummary showprofile(@CurrentUser UtilisateurPrincipal currentUser){
-         return new UtilisateurSummary(currentUser.getId(),currentUser.getUsername(),currentUser.getPrenom(), currentUser.getAuthorities());
+    public Utilisateur showprofile(@CurrentUser UtilisateurPrincipal currentUser){
+        return utilisateurRepository.findById(currentUser.getId()).orElseThrow(
+                ()->new AppException(" utilisateur current User n'est pas définit")
+        );
+        //return new UtilisateurSummary(currentUser.getId(),currentUser.getUsername(),currentUser.getPrenom(), user.getRole(), currentUser.getMatricule(), currentUser.getService());
     }
 
 
@@ -58,17 +70,21 @@ public class UtilisateurController {
     @PostMapping("/admin/create")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<ApiResponse> createUtilisateur(@Valid @RequestBody CreateUtilisateur createUtilisateur){
-        // Todo Refactor
+        String matricule = createUtilisateur.getNom() + utils.sdf.format(new  Date()) +( (createUtilisateur.getPrenom() != null ) ? createUtilisateur.getPrenom().substring(0,createUtilisateur.getPrenom().length()-2) : "");
         Utilisateur utilisateur = new Utilisateur(createUtilisateur.getNom(),createUtilisateur.getPrenom(),createUtilisateur.getPassword(),
-                createUtilisateur.getUsername(),createUtilisateur.getEmail(),createUtilisateur.getPhoto(),createUtilisateur.getMatricule(),createUtilisateur.getService());
+                createUtilisateur.getUsername(),createUtilisateur.getEmail(),createUtilisateur.getPhoto(),matricule,createUtilisateur.getService());
         utilisateur.setPassword(passwordEncoder.encode(utilisateur.getPassword()));
+        Set<Role> roleSet = new HashSet<>();
 
         for(Role role : createUtilisateur.getRole()){
             Role roleValidator = roleRepository.findById(role.getId()).orElseThrow (
                     () -> new RessourceNotFound("Role", "roleId", role.getName())
             );
-            utilisateur.setRole(Collections.singleton(roleValidator));
+            roleSet.add(roleValidator);
+            //utilisateur.setRole(Collections.singleton(roleValidator));
         }
+
+        utilisateur.setRole(roleSet);
 
         Utilisateur result = utilisateurRepository.save(utilisateur);
 

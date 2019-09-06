@@ -1,8 +1,13 @@
 package udb.gl;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 @Entity
 public class Dossier {
@@ -11,11 +16,12 @@ public class Dossier {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private int numero;
+    private String numero = UUID.randomUUID().toString().replaceAll("-","").toUpperCase();
 
     private String commentaire;
 
-    @OneToOne(mappedBy = "dossier")
+
+    @OneToOne(mappedBy = "dossier", optional=false, cascade = CascadeType.ALL)
     private Patient patient;
 
     @ManyToMany(fetch=FetchType.LAZY, cascade = CascadeType.PERSIST)
@@ -29,11 +35,6 @@ public class Dossier {
 
     public Dossier() {}
 
-    public Dossier(int numero, String commentaire) {
-        this.numero = numero;
-        this.commentaire = commentaire;
-        //this.patient = patient;
-    }
 
     public long getId() {
         return id;
@@ -43,11 +44,11 @@ public class Dossier {
         this.id = id;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 

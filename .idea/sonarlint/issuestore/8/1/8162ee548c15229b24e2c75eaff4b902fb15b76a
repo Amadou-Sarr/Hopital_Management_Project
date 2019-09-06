@@ -1,0 +1,5 @@
+
+[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¯†¡ºÈ-
+Dsquid:S14520"&Remove usage of generic wildcard type.(×’æ´8¯†¡ºÈ-
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ8ŒŽÎ¹È-
+Xsquid:UselessImportCheck"(Remove this unused import 'udb.gl.Role'.(ú‘Šéýÿÿÿÿ8ŒŽÎ¹È-

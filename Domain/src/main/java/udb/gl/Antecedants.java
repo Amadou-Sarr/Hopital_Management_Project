@@ -10,7 +10,7 @@ public class Antecedants {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(length = 100)
+    @Column(length = 100, unique = true)
     private String antecedant;
 
     @Column(length = 250)

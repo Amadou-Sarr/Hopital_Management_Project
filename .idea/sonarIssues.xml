@@ -93,6 +93,31 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/DateSearchPayload.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/DossierSearchPayload.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/MedicamentConsultationPayload.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/PatientPayload.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/PatientSearchPayload.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/RendezVousAvailableHours.java">
           <value>
             <set />
@@ -109,6 +134,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/UtilisateurSummary.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/rendezRecherche.java">
           <value>
             <set />
           </value>
@@ -139,6 +169,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsutationsService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/Utils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/JwtAuthenticationFilter.java">
           <value>
             <set />
           </value>
@@ -223,7 +263,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/DossierRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/MedicamentRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/PatientRepository.java">
           <value>
             <set />
           </value>

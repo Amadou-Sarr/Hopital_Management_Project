@@ -2,6 +2,7 @@ package udb.gl.payload;
 
 import org.springframework.security.core.GrantedAuthority;
 import udb.gl.Role;
+import udb.gl.ServiceName;
 
 import java.util.Collection;
 import java.util.List;
@@ -12,13 +13,17 @@ public class UtilisateurSummary {
         private Long id;
         private String username;
         private String prenom;
-        private Collection<? extends GrantedAuthority> authorities;
+        private Set<Role> role;
+        private String matricule;
+        private ServiceName service;
 
-    public UtilisateurSummary(Long id, String username, String prenom,  Collection<? extends GrantedAuthority> authorities) {
+    public UtilisateurSummary(Long id, String username, String prenom,  Set<Role> role,String matricule, ServiceName service) {
         this.id = id;
         this.username = username;
         this.prenom = prenom;
-        this.authorities = authorities;
+        this.role = role;
+        this.matricule = matricule;
+        this.service = service;
     }
 
     public Long getId() {
@@ -45,11 +50,27 @@ public class UtilisateurSummary {
         this.prenom = prenom;
     }
 
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return authorities;
+    public Set<Role> getRole() {
+        return role;
     }
 
-    public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
-        this.authorities = authorities;
+    public void setRole(Set<Role> role) {
+        this.role = role;
+    }
+
+    public String getMatricule() {
+        return matricule;
+    }
+
+    public void setMatricule(String matricule) {
+        this.matricule = matricule;
+    }
+
+    public ServiceName getService() {
+        return service;
+    }
+
+    public void setService(ServiceName service) {
+        this.service = service;
     }
 }

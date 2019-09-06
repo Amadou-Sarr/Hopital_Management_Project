@@ -2,34 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aec6ec1-8a08-4c0e-b04a-f92b21ce112b" name="Default" comment="Update on Rendez vous business logic added  Medecin relationship">
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/ServiceName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/DateSearchPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/DossierSearchPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/MedicamentConsultationPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/PatientPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/PatientSearchPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/rendezRecherche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07c72230f00cec590aeb3d0e58d28aa9e3fc53a4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07c72230f00cec590aeb3d0e58d28aa9e3fc53a4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b5930ce71986fc9bfe242d9ca3cbf84f30bf7fc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b5930ce71986fc9bfe242d9ca3cbf84f30bf7fc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/132314da373ae4817bd1c1e6e430e658f5adcf16" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/132314da373ae4817bd1c1e6e430e658f5adcf16" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d9540ef47e7c455f35d23b9bd8661095a10ac50" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d9540ef47e7c455f35d23b9bd8661095a10ac50" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4ef23cd4af6030c36e179b6b1e78b333f01ea94d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4ef23cd4af6030c36e179b6b1e78b333f01ea94d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11cf157f28c01cdccb2ba23b4e4ced7380757e5d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11cf157f28c01cdccb2ba23b4e4ced7380757e5d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/5675c8f0289a98a579e3dcc01e1edf162585b538" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/5675c8f0289a98a579e3dcc01e1edf162585b538" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/84c67ec3470bc5cf1fb3f482867e2161969c3c5c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/84c67ec3470bc5cf1fb3f482867e2161969c3c5c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e836759d9e2d54c856ab3d01cbc5e180c33c8ad" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e836759d9e2d54c856ab3d01cbc5e180c33c8ad" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b93f299178566b2b824df8b7eeeef691540bed29" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b93f299178566b2b824df8b7eeeef691540bed29" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/87c97e8f510755cd5261934fe484f48d0ff31e3e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/87c97e8f510755cd5261934fe484f48d0ff31e3e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9dfb58a370970dbb49bcf07bedb59e4555401f2b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9dfb58a370970dbb49bcf07bedb59e4555401f2b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a948c51d1129fdeefcb990200e8e5d2171b4cb10" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a948c51d1129fdeefcb990200e8e5d2171b4cb10" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/baab72ef097c1b300fa0f4c0f51a8be436dfd52d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/baab72ef097c1b300fa0f4c0f51a8be436dfd52d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0789c6ab42f0ce9e800d52c870171b7a864e40f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0789c6ab42f0ce9e800d52c870171b7a864e40f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0e760c2cc077978c317e00cb1394891e4914403" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0e760c2cc077978c317e00cb1394891e4914403" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d780b5982d35e65d48521fc2b770ae33f021c38b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d780b5982d35e65d48521fc2b770ae33f021c38b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dda1c211260f14ec369e09abd1a6332a7cc45e7e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dda1c211260f14ec369e09abd1a6332a7cc45e7e" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/CreateUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/CreateUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/SignupRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/SignupRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/TokenSecurity/UtilisateurPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/TokenSecurity/UtilisateurPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/ConsultationPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/ConsultationPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/RendezvousPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/RendezvousPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/UtilisateurSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/UtilisateurSummary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/TokenSecurity/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/TokenSecurity/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/ConsultationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/ConsultationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/RendezVousController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/RendezVousController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/UtilisateurController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/CreateUtilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/CreateUtilisateur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/SignupRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/SignupRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/UtilisateurPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/UtilisateurPrincipal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/AuthentificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/AuthentificationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/META-INF/Api.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ConsultationPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/ConsultationPayload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/RendezvousPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/RendezvousPayload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UtilisateurSummary.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/Payload/UtilisateurSummary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/TokenSecurity/JwtAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/ConsultationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/ConsultationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/RendezVousController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/RendezVousController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/UtilisateurController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/api/UtilisateurController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Utilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Utilisateur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsulattonByServiceJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/Api/target/classes/udb/gl/jobs/StatistiquesConsulattonByServiceJob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Antecedants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Antecedants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Consultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Consultation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Dossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Dossier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/MedicamentConsultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/MedicamentConsultation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Medicaments.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Medicaments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/RendezVous.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/udb/gl/RendezVous.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Antecedants.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Antecedants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Consultation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Consultation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Dossier.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Dossier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/MedicamentConsultation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/MedicamentConsultation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Medicaments.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Medicaments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/Patient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/target/classes/udb/gl/RendezVous.class" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/target/classes/udb/gl/RendezVous.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/DossierRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/DossierRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/MedicamentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/MedicamentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RendezVousRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RendezVousRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/UtilisateurRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/UtilisateurRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/DossierRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/DossierRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/MedicamentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/MedicamentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/PatientRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/PatientRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/RendezVousRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/RendezVousRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/UtilisateurRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/target/classes/udb/gl/UtilisateurRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/target/classes/udb/gl/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/Web/target/classes/udb/gl/Bootstrap.class" afterDir="false" />
     </list>
@@ -63,130 +96,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Bootstrap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java">
+      <file leaf-file-name="Consultation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Consultation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatistiquesConsulattonByServiceJob.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-              <folding>
-                <element signature="e#759#769#0" expanded="true" />
-                <element signature="e#1005#1127#1" expanded="true" />
-                <element signature="e#1136#1270#0" expanded="true" />
-                <element signature="e#1205#1269#0" expanded="true" />
-                <element signature="e#1136#1270#0" expanded="true" />
-                <element signature="e#1280#1431#0" expanded="true" />
-                <element signature="e#1348#1416#0" expanded="true" />
-                <element signature="e#1348#1430#0" expanded="true" />
-                <element signature="e#1348#1430#0" expanded="true" />
-                <element signature="e#1280#1431#0" expanded="true" />
-                <element signature="e#1441#1592#0" expanded="true" />
-                <element signature="e#1509#1577#0" expanded="true" />
-                <element signature="e#1509#1591#0" expanded="true" />
-                <element signature="e#1509#1591#0" expanded="true" />
-                <element signature="e#1441#1592#0" expanded="true" />
-                <element signature="e#1602#1753#0" expanded="true" />
-                <element signature="e#1669#1737#0" expanded="true" />
-                <element signature="e#1669#1752#0" expanded="true" />
-                <element signature="e#1669#1752#0" expanded="true" />
-                <element signature="e#1602#1753#0" expanded="true" />
-                <element signature="e#1763#1919#0" expanded="true" />
-                <element signature="e#1830#1902#0" expanded="true" />
-                <element signature="e#1830#1918#0" expanded="true" />
-                <element signature="e#1830#1918#0" expanded="true" />
-                <element signature="e#1763#1919#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuartzJobScheduler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/QuartzJobScheduler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Quartz_Tables_InnoDB.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Quartz_Tables_InnoDB.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilisateurController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/UtilisateurController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-              <folding>
-                <element signature="e#1381#1393#0" expanded="true" />
-                <element signature="e#1394#1410#0" expanded="true" />
-                <element signature="e#1446#1465#0" expanded="true" />
-                <element signature="e#1709#1728#0" expanded="true" />
-                <element signature="e#1729#1754#0" expanded="true" />
-                <element signature="e#1755#1778#0" expanded="true" />
-                <element signature="e#1748#1776#0" expanded="true" />
-                <element signature="e#1933#1934#0" expanded="true" />
-                <element signature="e#1987#1988#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilisateurSummary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/UtilisateurSummary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilisateurPrincipal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/UtilisateurPrincipal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-end-line="39" />
-              <folding>
-                <element signature="e#1564#1749#1" expanded="true" />
-                <element signature="e#1601#1622#0" expanded="true" />
-                <element signature="e#1601#1631#0" expanded="true" />
-                <element signature="e#1687#1701#0" expanded="true" />
-                <element signature="e#1601#1748#0" expanded="true" />
-                <element signature="e#1601#1748#0" expanded="true" />
-                <element signature="e#2628#2629#0" expanded="true" />
-                <element signature="e#2658#2659#0" expanded="true" />
-                <element signature="e#2967#2968#0" expanded="true" />
-                <element signature="e#3001#3002#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthentificationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/AuthentificationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+            <state relative-caret-position="34">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -194,20 +108,53 @@
       <file leaf-file-name="CustomUserDetailsService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/CustomUserDetailsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="255">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignupRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/SignupRequest.java">
+      <file leaf-file-name="Dossier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Dossier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="23" column="78" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utilisateur.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Utilisateur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MedicamentConsultation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/MedicamentConsultation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-28">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Medicaments.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Medicaments.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -217,11 +164,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sdf</find>
+      <find>L</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -234,41 +187,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/UtilisateurRepository.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RoleRepository.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/TokenSecurity/UtilisateurPrincipal.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/TokenSecurity/CustomUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/MedicamentsConsultationRepository.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/AntecedantsRepository.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyPayloadRequest.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/MedicamentRepository.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java" />
-        <option value="$PROJECT_DIR$/Web/src/main/java/udb/gl/HopitalMain.java" />
-        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Role.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/AuthentificationController.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/Payload/CreateUtilisateur.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/ConsultationPayload.java" />
-        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Antecedants.java" />
-        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Consultation.java" />
-        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Dossier.java" />
-        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/MedicamentConsultation.java" />
-        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Medicaments.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/RendezvousPayload.java" />
         <option value="$PROJECT_DIR$/Api/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsultationsByDayJob.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByService.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsultationsByGender.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsultationsByAgeJob.java" />
-        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/RendezVous.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/RendezVousController.java" />
-        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/ConsultationController.java" />
         <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/RoleName.java" />
         <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/StatistiquesConsultation.java" />
         <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/StatistiquesConsultationsRepository.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsutationsService.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RendezVousRepository.java" />
-        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Patient.java" />
         <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/ConsultationRepository.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsultationsService.java" />
         <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/StatistiquesConsultationsJournalieres.java" />
@@ -277,14 +206,38 @@
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/AuthentificationController.java" />
         <option value="$PROJECT_DIR$/application.properties" />
         <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/ServiceName.java" />
-        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Utilisateur.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/CreateUtilisateur.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/UtilisateurPrincipal.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/SignupRequest.java" />
-        <option value="$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/JwtAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/services/Utils.java" />
+        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Consultation.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/UtilisateurSummary.java" />
+        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/PatientRepository.java" />
+        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/DossierRepository.java" />
+        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/MedicamentRepository.java" />
+        <option value="$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/rendezRecherche.java" />
+        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/UtilisateurRepository.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/PatientPayload.java" />
+        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Medicaments.java" />
+        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Utilisateur.java" />
+        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Antecedants.java" />
         <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/UtilisateurController.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/PatientSearchPayload.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/DateSearchPayload.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/DossierSearchPayload.java" />
+        <option value="$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RendezVousRepository.java" />
+        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Dossier.java" />
+        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/Patient.java" />
+        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/RendezVous.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/RendezvousPayload.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/RendezVousController.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/MedicamentConsultationPayload.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/api/ConsultationController.java" />
+        <option value="$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/ConsultationPayload.java" />
+        <option value="$PROJECT_DIR$/Domain/src/main/java/udb/gl/MedicamentConsultation.java" />
       </list>
     </option>
   </component>
@@ -311,8 +264,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="364" />
-    <option name="width" value="697" />
+    <option name="x" value="340" />
+    <option name="width" value="721" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -322,7 +275,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -384,7 +336,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gl" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+              <item name="payload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
@@ -394,7 +346,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gl" type="462c0819:PsiDirectoryNode" />
-              <item name="payload" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
@@ -434,12 +386,37 @@
             <path>
               <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
               <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Persistance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Persistance" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Persistance" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Persistance" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="New_Hopital_Back_End" type="462c0819:PsiDirectoryNode" />
+              <item name="Persistance" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gl" type="462c0819:PsiDirectoryNode" />
-              <item name="audit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="New_Hopital_Back_End" type="b2602c69:ProjectViewProjectNode" />
@@ -480,6 +457,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -686,11 +664,39 @@
       <workItem from="1561281529097" duration="2099000" />
       <workItem from="1565559304683" duration="1232000" />
       <workItem from="1565631533808" duration="2998000" />
+      <workItem from="1565783020872" duration="4285000" />
+      <workItem from="1565811167884" duration="690000" />
+      <workItem from="1565861086524" duration="4663000" />
+      <workItem from="1565870708009" duration="33000" />
+      <workItem from="1566072314097" duration="1977000" />
+      <workItem from="1566381269447" duration="6194000" />
+      <workItem from="1566454337363" duration="4943000" />
+      <workItem from="1566508906510" duration="3579000" />
+      <workItem from="1566543382312" duration="912000" />
+      <workItem from="1566570541616" duration="3294000" />
+      <workItem from="1566580020353" duration="938000" />
+      <workItem from="1566584610877" duration="4103000" />
+      <workItem from="1566757227517" duration="9886000" />
+      <workItem from="1566771675594" duration="221000" />
+      <workItem from="1566939928248" duration="1522000" />
+      <workItem from="1567025469031" duration="928000" />
+      <workItem from="1567153811007" duration="5526000" />
+      <workItem from="1567171401089" duration="514000" />
+      <workItem from="1567177041190" duration="3872000" />
+      <workItem from="1567188483560" duration="1541000" />
+      <workItem from="1567191386478" duration="2152000" />
+      <workItem from="1567226092433" duration="345000" />
+      <workItem from="1567259679791" duration="6767000" />
+      <workItem from="1567326122330" duration="1838000" />
+      <workItem from="1567347164785" duration="681000" />
+      <workItem from="1567349517752" duration="3800000" />
+      <workItem from="1567750604865" duration="2260000" />
+      <workItem from="1567756302573" duration="717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124505000" />
+    <option name="totallyTimeSpent" value="204248000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -706,42 +712,80 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50075644" side_tool="true" weight="0.5693069" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32980332" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="8" />
-      <window_info id="Designer" order="2" />
+      <window_info id="Designer" order="1" />
       <window_info anchor="right" id="Database" order="7" weight="0.32980332" />
-      <window_info anchor="bottom" id="SonarQube" order="14" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="SonarQube" order="14" weight="0.32838285" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24962178" />
-      <window_info id="UI Designer" order="4" />
+      <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32838285" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info id="Image Layers" order="3" />
+      <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32838285" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5693069" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.5346535" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27458397" />
-      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32980332" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.27231467" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32980332" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="13" weight="0.2920792" />
       <window_info id="Learn" order="6" weight="0.32980332" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="REST Client" order="16" weight="0.4719472" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32838285" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="REST Client" order="16" weight="0.4719472" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5693069" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24962178" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" visible="true" weight="0.32838285" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="SonarLint" order="13" weight="0.2920792" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32838285" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32980332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
+      <window_info id="Learn" order="6" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32980332" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="SonarQube" order="14" weight="0.32838285" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32980332" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -763,198 +807,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/MedicamentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.4.RELEASE/spring-security-core-5.1.4.RELEASE.jar!/org/springframework/security/crypto/password/PasswordEncoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_8.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/src/main/java/udb/gl/HopitalMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/UtilisateurRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/ConsultationPayload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Antecedants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Dossier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/MedicamentConsultation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Medicaments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Consultation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/RendezvousPayload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsultationsByDayJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsultationsByGenderJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsultationsByAgeJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/RendezVous.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/RendezVousController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/RoleName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/StatistiquesConsultationsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RendezVousRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Patient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/ConsultationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="110" column="12" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/ConsultationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/StatistiquesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/StatistiquesConsultationsJournalieres.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1195">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/UtilisateurController.java" />
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/RoleController.java" />
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/ConsultationController.java" />
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/Controllers/AuthentificationController.java" />
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/StatistiquesConsultationsService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -963,31 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyMedicamentsPayloadRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -1005,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Utilisateur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="51" column="142" selection-start-line="51" selection-start-column="142" selection-end-line="51" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/JwtTokenProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -1019,44 +843,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/CreateUtilisateur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/SignupRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="102">
           <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/CustomUserDetailsService.java">
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="238">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/UtilisateurPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="38" column="43" selection-start-line="38" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/JwtAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/JwtAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Quartz_Tables_InnoDB.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="17">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1067,91 +892,277 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/jobs/StatistiquesConsulattonByServiceJob.java">
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/PostRequestsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#759#769#0" expanded="true" />
-            <element signature="e#1005#1127#1" expanded="true" />
-            <element signature="e#1136#1270#0" expanded="true" />
-            <element signature="e#1205#1269#0" expanded="true" />
-            <element signature="e#1136#1270#0" expanded="true" />
-            <element signature="e#1280#1431#0" expanded="true" />
-            <element signature="e#1348#1416#0" expanded="true" />
-            <element signature="e#1348#1430#0" expanded="true" />
-            <element signature="e#1348#1430#0" expanded="true" />
-            <element signature="e#1280#1431#0" expanded="true" />
-            <element signature="e#1441#1592#0" expanded="true" />
-            <element signature="e#1509#1577#0" expanded="true" />
-            <element signature="e#1509#1591#0" expanded="true" />
-            <element signature="e#1509#1591#0" expanded="true" />
-            <element signature="e#1441#1592#0" expanded="true" />
-            <element signature="e#1602#1753#0" expanded="true" />
-            <element signature="e#1669#1737#0" expanded="true" />
-            <element signature="e#1669#1752#0" expanded="true" />
-            <element signature="e#1669#1752#0" expanded="true" />
-            <element signature="e#1602#1753#0" expanded="true" />
-            <element signature="e#1763#1919#0" expanded="true" />
-            <element signature="e#1830#1902#0" expanded="true" />
-            <element signature="e#1830#1918#0" expanded="true" />
-            <element signature="e#1830#1918#0" expanded="true" />
-            <element signature="e#1763#1919#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/UserIdentityAvailability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/SaveHeavyAntecedantsPayloadRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/AuthentificationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/UtilisateurPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-end-line="39" />
-          <folding>
-            <element signature="e#1564#1749#1" expanded="true" />
-            <element signature="e#1601#1622#0" expanded="true" />
-            <element signature="e#1601#1631#0" expanded="true" />
-            <element signature="e#1687#1701#0" expanded="true" />
-            <element signature="e#1601#1748#0" expanded="true" />
-            <element signature="e#1601#1748#0" expanded="true" />
-            <element signature="e#2628#2629#0" expanded="true" />
-            <element signature="e#2658#2659#0" expanded="true" />
-            <element signature="e#2967#2968#0" expanded="true" />
-            <element signature="e#3001#3002#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="309">
+          <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/UtilisateurSummary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="321">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/ConsultationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/MedicamentsConsultationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="104" selection-start-line="4" selection-start-column="104" selection-end-line="4" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/PatientRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/DossierRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="73" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/MedicamentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/RendezVousAvailableHours.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/UtilisateurRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/services/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/src/main/java/udb/gl/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/PatientPayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/rendezRecherche.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/PatientSearchPayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/DateSearchPayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Antecedants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/DossierSearchPayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/UtilisateurController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+        <state relative-caret-position="524">
+          <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/CreateUtilisateur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="90" column="48" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Persistance/src/main/java/udb/gl/RendezVousRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="73" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Patient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/ConsultationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
           <folding>
-            <element signature="e#1381#1393#0" expanded="true" />
-            <element signature="e#1394#1410#0" expanded="true" />
-            <element signature="e#1446#1465#0" expanded="true" />
-            <element signature="e#1709#1728#0" expanded="true" />
-            <element signature="e#1729#1754#0" expanded="true" />
-            <element signature="e#1755#1778#0" expanded="true" />
-            <element signature="e#1748#1776#0" expanded="true" />
-            <element signature="e#1933#1934#0" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
+            <element signature="e#5034#5073#0" expanded="true" />
+            <element signature="e#5175#5234#0" expanded="true" />
+            <element signature="e#5776#5814#0" expanded="true" />
+            <element signature="e#5903#5967#0" expanded="true" />
+            <element signature="e#5926#5966#0" expanded="true" />
+            <element signature="e#5903#5967#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/MedicamentConsultationPayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/ConsultationPayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/payload/RendezvousPayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/RendezVous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Medicaments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/api/RendezVousController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="153" column="70" selection-start-line="153" selection-start-column="70" selection-end-line="153" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/src/main/java/udb/gl/tokensecurity/CustomUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Dossier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="78" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Utilisateur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/Consultation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Domain/src/main/java/udb/gl/MedicamentConsultation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>

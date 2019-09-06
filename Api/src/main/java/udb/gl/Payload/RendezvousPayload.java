@@ -1,6 +1,7 @@
 package udb.gl.payload;
 
 import udb.gl.Patient;
+import udb.gl.Utilisateur;
 
 import java.util.Date;
 
@@ -11,6 +12,25 @@ public class RendezvousPayload {
     private String heure;
 
     private Patient patient;
+
+    private Utilisateur utilisateur;
+
+    public RendezvousPayload() {}
+
+    public RendezvousPayload(Date date, String heure, Patient patient, Utilisateur utilisateur) {
+        this.date = date;
+        this.heure = heure;
+        this.patient = patient;
+        this.utilisateur = utilisateur;
+    }
+
+    public Utilisateur getUtilisateur() {
+        return utilisateur;
+    }
+
+    public void setUtilisateur(Utilisateur utilisateur) {
+        this.utilisateur = utilisateur;
+    }
 
     public Patient getPatient() {
         return patient;

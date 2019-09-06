@@ -29,15 +29,21 @@ public class Bootstrap implements CommandLineRunner {
     @Autowired
     AntecedantsRepository antecedantsRepository;
 
+    @Autowired
+    PatientRepository patientRepository;
+
+    @Autowired
+    DossierRepository dossierRepository;
 
     Logger logger;
 
 
     @Override
     public void run(String... args) throws Exception {
-     //   bootstrapRoles();
-       // String passwordUtilisateur =  passwordEncoder.encode("password");
-         //bootstrapUtilisteurs("Sarr","Amadou",passwordUtilisateur,"username","photoStringLink","amadou.sarr@udb.sn","123ABC",ServiceName.SERVICE_CHIRURGIE);
+       // bootstrapPatient();
+        //   bootstrapRoles();
+        // String passwordUtilisateur =  passwordEncoder.encode("medecin");
+         //bootstrapUtilisteurs("Niass","Baye",passwordUtilisateur,"medecin","Temp/photoStringLink","baye.niass@udb.sn","testmat1234",ServiceName.SERVICE_PEDIATRIE);
 
     }
 
@@ -45,7 +51,7 @@ public class Bootstrap implements CommandLineRunner {
     void bootstrapUtilisteurs(String nom, String prenom, String password, String username, String photo, String email, String matricule,ServiceName service){
 
         Utilisateur utilisateur = new Utilisateur(nom,prenom,password,username,photo,email,matricule,service);
-        Role utilisateurRole = roleRepository.findByName(RoleName.ROLE_ADMIN).orElseThrow(
+        Role utilisateurRole = roleRepository.findByName(RoleName.ROLE_MEDECIN).orElseThrow(
                 ()->new AppException("Le Role de l'utilisateur n'est pas définit")
         );
 
@@ -69,4 +75,30 @@ public class Bootstrap implements CommandLineRunner {
         roleRepository.save(roleProspect);
         roleRepository.save(roleChefService);
     }
+
+
+    void bootstrapPatient(){
+        Patient patient = new Patient();
+        patient.setNom("SARR");
+        patient.setPrenom("Amadou");
+        patient.setAdresse("sacree coeur 3");
+        patient.setNumero_telephone(772227120);
+        patient.setAge(25);
+        patient.setSexe("masculin");
+        patient.setNumeroPatient("testNumero");
+        Dossier dossier = new Dossier();
+        dossier.setCommentaire("testDossier");
+        patient.setDossier(dossier);
+        dossier.setPatient(patient);
+        patientRepository.save(patient);
+        dossierRepository.save(dossier);
+
+    }
+
+   void bootstrapRendezVous(){
+
+    }
+
+
+
 }

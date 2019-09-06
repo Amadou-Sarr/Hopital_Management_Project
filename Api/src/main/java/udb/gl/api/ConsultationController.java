@@ -1,5 +1,7 @@
 package udb.gl.api;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -8,6 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import udb.gl.*;
 import udb.gl.payload.ApiResponse;
 import udb.gl.payload.ConsultationPayload;
+import udb.gl.payload.DossierSearchPayload;
+import udb.gl.payload.MedicamentConsultationPayload;
 import udb.gl.services.PostRequestsService;
 import udb.gl.services.SaveHeavyAntecedantsPayloadRequest;
 import udb.gl.services.SaveHeavyMedicamentsPayloadRequest;
@@ -18,7 +22,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/consultation")
 @CrossOrigin
-@PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_SECRETAIRE') or hasRole('MEDECIN')")
+@PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('MEDECIN')")
 public class ConsultationController {
 
     @Autowired
@@ -44,6 +48,8 @@ public class ConsultationController {
 
     @Autowired
     PostRequestsService postRequestsService;
+
+    Logger logger = LoggerFactory.getLogger(getClass());
 
 
 
@@ -82,6 +88,11 @@ public class ConsultationController {
     }
 
 
+    @PostMapping("/dossier/find")
+    public Dossier getDosssier(@RequestBody DossierSearchPayload dossierSearchPayload){
+        return dossierRepository.findByNumero(dossierSearchPayload.getNumeroDossier());
+    }
+
     @PostMapping("/antecedants/save")
     public ResponseEntity<ApiResponse> saveAntecedants(@Valid @RequestBody List<Antecedants> antecedants){
        Thread asyncSaveAntecedantsThread = new Thread(new SaveHeavyAntecedantsPayloadRequest());
@@ -119,15 +130,72 @@ public class ConsultationController {
         if(consultationPayload == null){
             return new ResponseEntity(new ApiResponse(false, "Vous n'avez enyoyé aucune donnée à enregistrer"), HttpStatus.BAD_REQUEST);
         }
-        //Todo use a mapper() for this and
+        //Todo  complete
+
         Consultation consultation = new Consultation(consultationPayload.getDate(),
                 consultationPayload.getCommentaire(),consultationPayload.getPrescription());
         consultation.setPatient(consultationPayload.getPatient());
         consultation.setUtilisateur(consultationPayload.getUtilisateur());
-        //TODO there are certainly controls to implements here; Find out later
-        consultationRepository.save(consultation);
+        
+        consultation = consultationRepository.save(consultation);
+
+        List<MedicamentConsultationPayload> medicamentConsultationPayloadList = consultationPayload.getListMedicament();
+
+        if(medicamentConsultationPayloadList != null){
+            for(MedicamentConsultationPayload medicamentConsultationPayload : medicamentConsultationPayloadList){
+                MedicamentConsultation medicamentConsultation = new MedicamentConsultation();
+                medicamentConsultation.setConsultation(consultation);
+                medicamentConsultation.setDosage(medicamentConsultationPayload.getDosage());
+                Medicaments medicament = medicamentRepository.findById(medicamentConsultationPayload.getMedicament());
+                medicamentConsultation.setMedicaments(medicament);
+
+                medicamentsConsultationRepository.save(medicamentConsultation);
+            }
+        }
+
+
+
+
+        Dossier dossier = dossierRepository.findByNumero(consultationPayload.getNumeroDossier());
+        dossier.setAntecedants(consultationPayload.getListAntecedants());
+        dossierRepository.save(dossier);
+
         return ResponseEntity.ok(new ApiResponse(true, "Les données ont été enregistrer avec succes! "));
     }
 
-    // TODO Do this the right way AND replace all the Domain calles and use a mepper()
+    // TODO -- Do this the right way AND replace all the Domain calls by using a mapper() A.Sarr
+
+    @PostMapping("/medicament/instance/save")
+    public ResponseEntity<ApiResponse> saveUniqueMedicament(@RequestBody Medicaments medicament){
+
+        if(medicament == null){
+            return new ResponseEntity(new ApiResponse(false,"aucune donnée n'a été envoyé!!"), HttpStatus.BAD_REQUEST);
+        }
+
+        Medicaments medicamentPresent = medicamentRepository.findByLibelle(medicament.getLibelle());
+
+        if(medicamentPresent == null){
+            medicamentRepository.save(medicament);
+            return ResponseEntity.ok(new ApiResponse(true,"données enregistrés avec succes!"));
+        }
+
+        return new ResponseEntity(new ApiResponse(false,"Cet Anecedant est deja present dans la base de données!"), HttpStatus.BAD_REQUEST);
+    }
+
+    @PostMapping("/antecedant/instance/save")
+    public ResponseEntity<ApiResponse> saveUniqueAntecedant(@RequestBody Antecedants antecedant){
+
+        if(antecedant == null){
+            return new ResponseEntity(new ApiResponse(false,"aucune donnée n'a été envoyé!!"), HttpStatus.BAD_REQUEST);
+        }
+
+        Antecedants antecedantPresent = antecedantsRepository.findByAntecedant(antecedant.getAntecedant());
+
+        if(antecedantPresent == null){
+            antecedantsRepository.save(antecedant);
+            return  ResponseEntity.ok(new ApiResponse(true, "Données enregistrés avec succes !"));
+        }
+
+        return new ResponseEntity(new ApiResponse(false,"Cet Anecedant est deja present dans la base de données!"), HttpStatus.BAD_REQUEST);
+        }
 }

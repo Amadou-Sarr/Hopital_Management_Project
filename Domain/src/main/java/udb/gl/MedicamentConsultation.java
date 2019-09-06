@@ -15,11 +15,17 @@ public class MedicamentConsultation {
     @JoinColumn(name="consultation")
     private Consultation consultation;
 
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST )//CascadeType.Persit & Merge
-    @JoinColumn(unique = true)
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)//CascadeType.Persit & Merge
+    @JoinColumn(name = "medicament")
     private Medicaments medicaments;
 
     public MedicamentConsultation() {}
+
+    public MedicamentConsultation(String dosage, Consultation consultation, Medicaments medicaments) {
+        this.dosage = dosage;
+        this.consultation = consultation;
+        this.medicaments = medicaments;
+    }
 
     public MedicamentConsultation(String dosage) {
         this.dosage = dosage;

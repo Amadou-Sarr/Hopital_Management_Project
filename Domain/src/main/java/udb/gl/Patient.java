@@ -1,6 +1,8 @@
 package udb.gl;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,6 +13,8 @@ public class Patient {
     private long id;
 
     private int numero_telephone;
+
+    private String numeroPatient;
 
     private String nom;
 
@@ -23,21 +27,26 @@ public class Patient {
     private String adresse;
 
 
+    @OneToOne(mappedBy = "patient", cascade = CascadeType.ALL, optional = false)
+    @JsonIgnore
+    private RendezVous rendezVous;
 
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST )//CascadeType.Persit & Merge
+    @JsonIgnore
+    @OneToOne(fetch = FetchType.LAZY)//CascadeType.Persit & Merge
     @JoinColumn(unique = true)
     //@JoinTable(name="utilisateur_role",joinColumns = @JoinColumn(name = "utilisateur_id"),inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Dossier dossier;
 
     public Patient() {}
 
-    public Patient(int numero_telephone, String prenom, String nom, String sexe, int age, String adresse) {
+    public Patient(int numero_telephone, String prenom, String nom, String sexe, int age, String adresse, String numeroPatient) {
         this.numero_telephone = numero_telephone;
         this.prenom = prenom;
         this.nom = nom;
         this.age = age;
         this.sexe = sexe;
         this.adresse = adresse;
+        this.numeroPatient = numeroPatient;
     }
 
 
@@ -103,5 +112,21 @@ public class Patient {
 
     public void setAdresse(String adresse) {
         this.adresse = adresse;
+    }
+
+    public String getNumeroPatient() {
+        return numeroPatient;
+    }
+
+    public void setNumeroPatient(String numeroPatient) {
+        this.numeroPatient = numeroPatient;
+    }
+
+    public RendezVous getRendezVous() {
+        return rendezVous;
+    }
+
+    public void setRendezVous(RendezVous rendezVous) {
+        this.rendezVous = rendezVous;
     }
 }

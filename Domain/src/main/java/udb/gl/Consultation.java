@@ -23,13 +23,11 @@ public class Consultation {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "patient_id", nullable = false)
    // @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonIgnore
     private Patient patient;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "utilisateur_id", nullable = false)
     // @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonIgnore
     private Utilisateur  utilisateur;
 
     public Consultation() {}

@@ -9,6 +9,7 @@ public class Medicaments {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Column(unique = true)
     private String libelle;
 
     @OneToOne(fetch=FetchType.LAZY, mappedBy="medicaments")

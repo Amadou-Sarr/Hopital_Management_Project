@@ -5,4 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DossierRepository extends JpaRepository<Dossier, Long> {
+    Dossier findByNumero(String numeroDossier);
 }
